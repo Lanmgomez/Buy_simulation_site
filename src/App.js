@@ -1,13 +1,22 @@
 import './App.css';
 import Footer from './components/Footer';
-import Header from './components/Header';
-import Main from './components/Main';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Navbar from './components/Navbar';
+import Home from './components/pages/Home';
+import AboutUs from './components/pages/AboutUs';
+import Option from './components/pages/Option';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Main />
+      <BrowserRouter>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={<Home />}/>
+          <Route path='/aboutus' element={<AboutUs />}/>
+          <Route path='/option' element={<Option />}/>
+        </Routes>
+      </BrowserRouter>
       <Footer />
     </div>
   );

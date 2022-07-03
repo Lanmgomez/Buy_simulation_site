@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #000;
+}
+
+.footer p {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.footer div i {
+    font-size: 25px;
+    padding: 10px;
+}
+
+@media (max-width:415px) {
+    .footer {
+        margin-top: 60rem;
+        width: 390px;
+    }
+}

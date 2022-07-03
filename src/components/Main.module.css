@@ -1,0 +1,51 @@
+.main {
+    display: flex;
+    width: 100%;
+    height: 40rem;
+}
+
+.products {
+    display: flex;
+    width: 80%;
+}
+
+.div01, .div02, .div03 {
+    display: flex;
+    margin-top: 5em;
+    flex-direction: column;
+    width: 300px;
+    height: 500px;
+}
+
+.div01:hover, .div02:hover, .div03:hover {
+    border: 1px solid;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .4);
+}
+
+.div01 img, .div02 img, .div03 img {
+    width: 297px;
+    height: 300px;
+}
+
+.div01 input, .div02 input, .div03 input {
+    width: 300px;
+    height: 40px;
+    margin-top: 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(41, 209, 41);
+    font-size: large;
+    color: #fff;
+}
+
+.div01 input:hover, .div02 input:hover, .div03 input:hover {
+    background-color: rgb(29, 161, 29);
+}
+
+@media (max-width:415px) {
+    .products {
+        display: flex;
+        flex-direction: column;
+        margin-left: -10em;
+    }
+}

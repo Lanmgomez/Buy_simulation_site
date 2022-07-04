@@ -4,3 +4,11 @@
   text-align: center;
   box-sizing: border-box;
 }
+
+button {
+  width: 100px;
+  height: 25px;
+  display: block;
+  position: absolute;
+  margin-left: 40em;
+}
